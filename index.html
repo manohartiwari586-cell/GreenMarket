@@ -245,31 +245,67 @@
     }
 
     @media (max-width: 600px){
+.top-bar{
+flex-direction:column;
+}
+
+.search-box{
+width:100%;
+}
+
+.search-box input{
+font-size:15px;
+}
+
+.search-box button{
+padding:12px;
+}
+
+.nav{
+gap:8px;
+}
+
+.nav a{
+font-size:15px;
+padding:10px;
+}
+
+.hero{
+padding:15px;
+}
+
+.hero-actions{
+justify-content:center;
+}
+
+.btn{
+width:100%;
+}
+
+header h1{
+font-size:34px;
+}
+
+.profile{
+top:10px;
+right:10px;
+}
       .cards{ grid-template-columns: 1fr; }
       .product-grid{ grid-template-columns: 1fr; }
     }
 .top-bar{
-
-width:min(1100px,calc(100% - 24px));
-
+width:min(1100px,calc(100% - 20px));
 margin:15px auto;
-
 display:flex;
-
+flex-wrap:wrap;
 justify-content:space-between;
-
 align-items:center;
-
-gap:20px;
-
+gap:12px;
 }
-
 .search-box{
-
 display:flex;
-
 flex:1;
-
+min-width:250px;
 }
 
 .search-box input{
@@ -303,27 +339,18 @@ cursor:pointer;
 }
 
 .top-icons{
-
 display:flex;
-
-gap:15px;
-
+justify-content:center;
+gap:10px;
+flex-wrap:wrap;
 }
 
 .top-icons a{
-
-font-size:28px;
-
+font-size:24px;
 text-decoration:none;
-
 background:white;
-
 padding:10px;
-
 border-radius:50%;
-
-transition:.3s;
-
 }
 
 .top-icons a:hover{
@@ -334,28 +361,23 @@ background:#2e7d32;
 
 }
 marquee{
-
 background:#ffeb3b;
-
 padding:12px;
-
 font-size:18px;
-
 font-weight:bold;
-
 color:#1b5e20;
-
 border-radius:8px;
-
-margin:15px 120px 10px 120px;
-
+margin:15px 120px 15px 120px;
+width:100;
+display:block;
+box-sizing:border-box;
 }
 .profile{
-
-position:relative;
-
+position:absolute;
+top:15px;
+right:15px;
+z-index:1000;
 cursor:pointer;
-
 }
 
 #profileImage{
@@ -461,7 +483,7 @@ color:#1b5e20;
     </div>
 <div class="profile">
 
-<img src="images/user.png" id="profileImage">
+<img src="images/user_prof.png" id="profileImage">
 
 <div class="profile-menu" id="profileMenu">
 
@@ -572,6 +594,7 @@ Explore
         </div>
       </section>
 </div>
+</main>
       <footer>&copy 2026 new project </footer>
 
 <script>
