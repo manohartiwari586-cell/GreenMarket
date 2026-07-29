@@ -144,6 +144,39 @@ header{
     font-size:20px;
     cursor:pointer;
 }
+.qty,
+.qty-dozen,
+.qty-litre,
+.qty-piece{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    margin:15px 0;
+}
+
+.qty button,
+.qty-dozen button,
+.qty-litre button,
+.qty-piece button{
+    width:35px;
+    height:35px;
+    border:none;
+    border-radius:50%;
+    background:#1b5e20;
+    color:white;
+    font-size:22px;
+    cursor:pointer;
+}
+
+.qty span,
+.qty-dozen span,
+.qty-litre span,
+.qty-piece span{
+    min-width:70px;
+    text-align:center;
+    font-weight:bold;
+}
 
 /* Add to Cart */
 

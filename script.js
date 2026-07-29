@@ -54,7 +54,7 @@ plus.onclick=function(){
 
 qty++;
 
-number.innerHTML=qty;
+number.innerHTML=qty + " kg";
 
 };
 
@@ -64,10 +64,94 @@ if(qty>1){
 
 qty--;
 
-number.innerHTML=qty;
+number.innerHTML=qty + " kg";
 
 }
 
+};
+
+});
+const dozenBoxes=document.querySelectorAll(".qty-dozen");
+
+dozenBoxes.forEach(box=>{
+
+let minus=box.children[0];
+let number=box.children[1];
+let plus=box.children[2];
+
+let qty=1;
+
+plus.onclick=function(){
+
+qty++;
+
+number.innerHTML=qty + " Dozen";
+};
+
+minus.onclick=function(){
+
+if(qty>1){
+
+qty--;
+
+number.innerHTML=qty + " Dozen";
+}
+};
+
+});
+const litreBoxes=document.querySelectorAll(".qty-litre");
+
+litreBoxes.forEach(box=>{
+
+let minus=box.children[0];
+let number=box.children[1];
+let plus=box.children[2];
+
+let qty=1;
+
+plus.onclick=function(){
+
+qty++;
+
+number.innerHTML=qty + " L";
+};
+
+minus.onclick=function(){
+
+if(qty>1){
+
+qty--;
+
+number.innerHTML=qty + " L";
+}
+};
+
+});
+const pieceBoxes=document.querySelectorAll(".qty-piece");
+
+pieceBoxes.forEach(box=>{
+
+let minus=box.children[0];
+let number=box.children[1];
+let plus=box.children[2];
+
+let qty=1;
+
+plus.onclick=function(){
+
+qty++;
+
+number.innerHTML=qty + " Piece";
+};
+
+minus.onclick=function(){
+
+if(qty>1){
+
+qty--;
+
+number.innerHTML=qty + " Piece";
+}
 };
 
 });
